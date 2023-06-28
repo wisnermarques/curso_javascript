@@ -27,7 +27,7 @@ function soma(e) {
       }
       break;
     default:
-      resultado = "Você não selecionou nenhuma operação.";
+      resultado = "Operação não selecionada.";
   }
 
   resultadoElement.textContent = resultado;
