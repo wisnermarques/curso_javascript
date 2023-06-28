@@ -2,10 +2,33 @@ function soma(e) {
   e.preventDefault();
   const valor1 = parseFloat(document.getElementById("valor1").value);
   const valor2 = parseFloat(document.getElementById("valor2").value);
-  const soma = valor1 + valor2;
+
+  const op = document.getElementById("op").value;
+
+  let resultado;
+
   let resultadoElement = document.getElementById("resultado");
 
-  resultadoElement.textContent = "A soma é " + soma;
+  switch (op) {
+    case "sum":
+      resultado = valor1 + valor2;
+      break;
+    case "sub":
+      resultado = valor1 - valor2;
+      break;
+    case "mult":
+      resultado = valor1 * valor2;
+      break;
+    case "div":
+      if (!isNaN(valor2) && valor2 !== 0) {
+        resultado = valor1 / valor2;
+      } else {
+        resultado = 'Não é permitido divisão por zero.'
+      }
+      break;
+  }
+
+  resultadoElement.textContent = resultado;
 }
 
 function limpar() {
