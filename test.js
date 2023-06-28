@@ -7,3 +7,8 @@ function soma(e) {
 
   resultadoElement.textContent = "A soma é " + soma;
 }
+
+function limpar() {
+  let resultadoElement = document.getElementById("resultado");
+  resultadoElement.textContent = "";
+}
