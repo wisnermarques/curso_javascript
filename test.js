@@ -30,7 +30,7 @@ function soma(e) {
       resultado = "Operação não selecionada.";
   }
 
-  resultadoElement.textContent = resultado;
+  resultadoElement.textContent = resultado.toFixed(2);
 }
 
 function limpar() {
