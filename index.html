@@ -16,7 +16,7 @@
   <body>
     <h1 class="text-center text-light-emphasis">Aplicativo com as operações básicas</h1>
     <form class="bg-info-subtle p-4 border rounded">
-      <label for="valor1" class="form-label">Valor 1:</label>
+      <label for="valor1" class="form-label fw-bold">Valor 1:</label>
       <input
         type="number"
         id="valor1"
@@ -24,14 +24,14 @@
         class="form-control"
       />
       <br />
-      <label for="valor2" class="form-label">Valor 2:</label>
+      <label for="valor2" class="form-label fw-bold">Valor 2:</label>
       <input
         type="number"
         id="valor2"
         placeholder="Digite outro número"
         class="form-control"
       />
-      <label for="op" class="form-label mt-3">Operação:</label>
+      <label for="op" class="form-label mt-3 fw-bold">Operação:</label>
       <select class="form-select" id="op">
         <option disabled selected>Escolha a operação</option>
         <option value="sum">+</option>
@@ -48,8 +48,8 @@
     </form>
     <br />
     <hr>
-    <p class="text-center fs-4 text">
-      Resultado: <span class="fw-bold" id="resultado"></span>
+    <p class="text-center fs-4 text fw-bold">
+      Resultado: <span class="fs-2 fw-bold badge text-bg-secondary" id="resultado"></span>
     </p>
 
     <script src="test.js"></script>
