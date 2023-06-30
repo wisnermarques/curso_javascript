@@ -23,11 +23,11 @@ function soma(e) {
       if (!isNaN(valor2) && valor2 !== 0) {
         resultado = valor1 / valor2;
       } else {
-        resultado = "Não é permitido divisão por zero.";
+        resultadoElement.textContent = "Não é permitido divisão por zero.";
       }
       break;
     default:
-      resultado = "Operação não selecionada.";
+      resultadoElement.textContent = "Operação não selecionada.";
   }
 
   resultadoElement.textContent = resultado.toFixed(2);
