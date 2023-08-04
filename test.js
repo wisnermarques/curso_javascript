@@ -39,12 +39,12 @@ function limpar() {
 }
 
 function testar() {
-  const  sexoM = document.getElementById('masc')
-  const  sexoF = document.getElementById('fem')
-  if(sexoM.checked) {
+  const sexoM = document.getElementById('masc')
+  const sexoF = document.getElementById('fem')
+  if (sexoM.checked) {
     document.getElementById('result').innerHTML = 'M'
   }
-  if(sexoF.checked) {
+  if (sexoF.checked) {
     document.getElementById('result').innerHTML = 'F'
   }
 }
